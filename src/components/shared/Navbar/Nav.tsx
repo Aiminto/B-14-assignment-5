@@ -1,8 +1,8 @@
-
+import logo from '../../../assets/logo-text.png'
 
 const Nav = () => {
     return (
-        <div className="container mx-auto ">
+        <div className="container mx-auto fixed ">
             <div className="navbar bg-base-100 shadow-sm">
                 <div className="navbar-start">
                     <div className="dropdown">
@@ -16,12 +16,12 @@ const Nav = () => {
                             <li><a>Item 3</a></li>
                         </ul>
                     </div>
-                    <a className="btn btn-ghost text-xl">Dev Stack</a>
-                    <h2>DEV</h2>
+                    <img src={logo} alt="logo" />
+                    
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
-                        <li><a>Home</a></li>
+                        <li><a className="font-bold text-[#D91B7E]">Home</a></li>
                         <li><a>Projects</a></li>
                         <li><a>Technologies</a></li>
                         <li><a>About</a></li>
@@ -29,8 +29,8 @@ const Nav = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <a className="btn">Signin</a>
-                    <a className="btn">Login</a>
+                    <a className="btn border-none">Signin</a>
+                    <a className="btn rounded-full text-white bg-[#D91B7E]">Signup</a>
                 </div>
             </div>
 
