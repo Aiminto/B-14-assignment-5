@@ -3,15 +3,9 @@ import type { techTypeData } from "../../types/Types";
 import Tech from "./Tech";
 
 import { use} from "react";
-import type {  Dispatch, SetStateAction } from "react";
 interface techDataProps {
     sentTechDataPromise: Promise<techTypeData[]>
 
-}
-
-interface techDataProps {
-    selectedtech: techTypeData[];
-    setSelectedtech: Dispatch<SetStateAction<techTypeData[]>>;
 }
 
 const Techs = ({ sentTechDataPromise}: techDataProps) => {

@@ -16,22 +16,17 @@ function App() {
 
   const sentTechDataPromise = techDataPromise()
 
-
   return (
     <>
       <Nav></Nav>
       <Banner></Banner>
-    <AddtechToList></AddtechToList>
+      <AddtechToList></AddtechToList>
       <Suspense fallback={<p>Data is coming soon ...................</p>}>
         <Techs
-          sentTechDataPromise={sentTechDataPromise}
-        ></Techs>
+          sentTechDataPromise={sentTechDataPromise}></Techs>
       </Suspense>
 
-
       <Footer></Footer>
-
-
     </>
   )
 }
