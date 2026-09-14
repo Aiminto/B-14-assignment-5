@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { FaReact } from "react-icons/fa";
 import { FcRating } from "react-icons/fc";
 
@@ -14,9 +15,11 @@ type TechProps = {
 };
 
 const Tech = ({ tech }: TechProps) => {
+    const [isselected,setIsselected]=useState(false)
 
     return (
         <div className="container mx-auto">
+             
 
             <div className=" border-2 border-accent p-3">
                 <div className=" space-y-4">
@@ -33,7 +36,7 @@ const Tech = ({ tech }: TechProps) => {
                     </div>
 
                 </div>
-                <button className="btn w-full rounded-xl bg-[#0A0F1D] text-[#FFFFFF]">Add to Stack</button>
+                <button onClick={()=>setIsselected(true)} className="btn w-full rounded-xl bg-[#0A0F1D] text-[#FFFFFF] disabled={isselected===true ? true : false}">{isselected === true ? "Selected":"Add to Stack"}</button>
             </div>
              <div>
                 

@@ -11,7 +11,7 @@ const Banner = () => {
                     <p className="text-gray-500">Explore frontend, backend, database, and tooling options, compare them side by side, and put together the stack that fits your
                         next project. </p>
                     <div className="flex gap-3">
-                        <button className="btn bg-gradient-to-r from-red-500 via-fuchsia-500 to-purple-600 text-white">Explore Technologies</button>
+                        <button className="btn text-xl font-bold bg-gradient-to-r from-red-500 via-fuchsia-500 to-purple-60 text-white rounded">Explore Technologies</button>
                         <button className=" btn ">Learn More</button>
                     </div>
 
