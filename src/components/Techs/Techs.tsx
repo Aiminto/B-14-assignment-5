@@ -1,9 +1,9 @@
 
 import type { techTypeData } from "../../types/Types";
 import Tech from "./Tech";
-import SelectedCard from "./SelectedCard";
-import { use, useState } from "react";
-import type { ComponentType, Dispatch, SetStateAction } from "react";
+
+import { use} from "react";
+import type {  Dispatch, SetStateAction } from "react";
 interface techDataProps {
     sentTechDataPromise: Promise<techTypeData[]>
 

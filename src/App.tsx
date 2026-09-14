@@ -5,7 +5,7 @@ import Techs from "./components/Techs/Techs"
 import Banner from "./components/shared/Banner"
 import type { techTypeData } from "./types/Types"
 import { Suspense } from "react"
-
+import AddtechToList from "./components/addtechnologie/AddtechToList"
 const techDataPromise = async (): Promise<techTypeData[]> => {
   const res = await fetch("/tech.json")
   const data = await res.json()
@@ -21,7 +21,7 @@ function App() {
     <>
       <Nav></Nav>
       <Banner></Banner>
-
+    <AddtechToList></AddtechToList>
       <Suspense fallback={<p>Data is coming soon ...................</p>}>
         <Techs
           sentTechDataPromise={sentTechDataPromise}
